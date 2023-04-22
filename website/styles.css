@@ -17,7 +17,13 @@ body, html {
     background-size: cover;
 
 }
-
+.logo2 {
+    position: fixed;
+    width: 114px;
+    height: 35px;
+    left: 1300px;
+    top: 62px;
+}
 .bg-text{
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
