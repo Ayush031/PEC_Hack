@@ -1,0 +1,105 @@
+
+// COLORS
+
+$primary-light: #426d49;
+$primary-dark: #4f612a;
+$primary-light: #28b485;
+
+$secondary-1: #e2b5a8;
+$secondary-2: #bbd4eb;
+$secondary-3: #B398B0;
+$secondary-4: #c4ac6c;
+
+
+$secondary-1-dark: #876C64;
+$secondary-2-dark: #707F8D;
+$secondary-3-dark: #80657D;
+
+$secondary-light: #ffb900;
+$tertiary-light: #2998ff;
+
+$violet-1: #624dd6;
+$violet-2: #bebad1;
+$violet-3: #673ab7;
+
+$white: #fff;
+$black: #000;
+$brown: #846c38;
+
+
+$grey-dark: #777;
+$grey-dark-2: #999;
+$grey-dark-3: #333;
+$grey-light-1: #f7f7f7;
+$grey-light-2: #eee;
+$grey-light-3: rgb(231, 228, 227);
+
+
+$nav-home: #624dd6;
+$nav-about: #51e29a;
+$nav-admission :#dd4f75;
+$nav-franchise :#88d914;
+$nav-branch: #624dd6;
+$nav-parent: #10b6fe;
+$nav-gallery: #624dd6;
+$nav-contact: #624dd6;
+
+// css color variables
+.root {
+    --primary-light: #426d49;
+    --primary-dark: #4f612a;
+    --primary-light: #28b485;
+
+    --secondary-1: #e2b5a8;
+    --secondary-2: #bbd4eb;
+    --secondary-3: #B398B0;
+    --secondary-4: #c4ac6c;
+
+
+    --secondary-1-dark: #876C64;
+    --secondary-2-dark: #707F8D;
+    --secondary-3-dark: #80657D;
+
+    --secondary-light: #ffb900;
+    --tertiary-light: #2998ff;
+
+    --violet-1: #624dd6;
+    --violet-2: #bebad1;
+    --violet-3: #673ab7;
+
+    --white: #fff;
+    --black: #000;
+    --brown: #846c38;
+
+
+    --grey-dark: #777;
+    --grey-dark-2: #999;
+    --grey-dark-3: #333;
+    --grey-light-1: #f7f7f7;
+    --grey-light-2: #eee;
+    --grey-light-3: rgb(231, 228, 227);
+
+
+    --nav-home: #624dd6;
+    --nav-about: #51e29a;
+    --nav-admission: #dd4f75;
+    --nav-franchise: #88d914;
+    --nav-branch: #624dd6;
+    --nav-parent: #10b6fe;
+    --nav-gallery: #624dd6;
+    --nav-contact: #624dd6;
+}
+
+// OVERLAY
+$overlay: linear-gradient(to right bottom, rgba($primary-light, 0.5), rgba($primary-dark, 0.5));
+
+// FONTS 
+$default-font-size: 1.6rem;
+
+// Grid
+$horizontal-gutter: 2rem;
+$vertical-gutter: 3rem;
+
+//Footer_copyright heighter
+$copyright-height: 2.5rem;
+$foot-margin-top: .5rem;
