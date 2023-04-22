@@ -14,17 +14,17 @@ firebase.initializeApp(firebaseConfig);
 //reference for database
 var pechackDB = firebase.database().ref('pechack')
 
-document.getElementById('peckhack').addEventListener("submit", submitForm)
+document.getElementById("peckhack").addEventListener("submit", submitForm);
 
 function submitForm(e){
     e.preventDefault();
-    var fname= getElementVal('fname');
-    var lname= getElementVal('lname');
-    var msgContent= getElementVal('subject');
+    var firstname= getElementVal("fname");
+    var lastname= getElementVal("lname");
+    var subject= getElementVal("subject");
 
     console.log(fname, lname, msgContent);
 }
 
 const getElementVal=(id)=>{
-    return document.getElementById(id).Value;
+    return document.getElementById(id).value;
 }

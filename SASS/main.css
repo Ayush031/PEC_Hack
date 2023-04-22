@@ -1,3 +1,8 @@
+.header_left .logo_img {
+  height: 50rem;
+  width: 50rem;
+}
+
 /* Style the label to display next to the inputs */
 /* Style the submit button */
 /* Style the container */
@@ -84,4 +89,19 @@ input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+}
+.u-align-center {
+  text-align: center;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2.5rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
 }

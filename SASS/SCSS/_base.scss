@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%; // 1rem=16px , to calculate % - (16px/16px)*100 = 100%
+    scroll-behavior: smooth;
+
+    @include respond(big-desktop) {
+        font-size: 100%; // 1rem=16px 16/16 *100 = 100%
+    }
+
+    @include respond(laptop) {
+        font-size: 75%; // 1rem=12px 12/16 *100 = 75%
+    }
+
+    @include respond(tablet-s) {
+        font-size: 56.25%; // 1rem=9px 9/16 *100 = 56.25%
+    }
+
+    @include respond(tablet-l) {
+        font-size: 50%; // 1rem=8px 8/16 *100 = 50%
+    }
+
+    @include respond(phone-l) {
+        font-size: 50%; // 1rem=8px 8/16 *100 = 50%
+    }
+
+    @include respond(phone) {
+        font-size: 50%; // 1rem=8px 8/16 *100 = 50%
+    }
+}
+
+body {
+
+    // font-family: "Lora", serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.section {
+    // &_body {}
+    &_heading{
+        margin-top: 1rem;
+        font-size: 3.4rem;
+        text-align: center;
+    }
+}
