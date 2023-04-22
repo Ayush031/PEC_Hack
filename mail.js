@@ -14,7 +14,7 @@ firebase.initializeApp(firebaseConfig);
 //reference for database
 var pechackDB = firebase.database().ref('pechack')
 
-document.getElementsById('peckhack').addEventListener("submit", submitForm)
+document.getElementById('peckhack').addEventListener("submit", submitForm)
 
 function submitForm(e){
     e.preventDefault();
