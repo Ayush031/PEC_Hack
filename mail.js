@@ -22,8 +22,19 @@ function submitForm(e){
     var lastname= getElementVal("lname");
     var subject= getElementVal("subject");
 
-    console.log(fname, lname, subject);
+    saveMsg(firstname, lastname, subject);
 }
+
+const saveMsg = (fname, lname, subject) => {
+ var newPechack= pechackDB.push();
+
+ newPechack.set({
+    fname: fname,
+    lname: lname,
+    subject: subject,
+ });
+
+};
 
 const getElementVal=(id)=>{
     return document.getElementById(id).value;
