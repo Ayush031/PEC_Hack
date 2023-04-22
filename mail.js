@@ -18,4 +18,13 @@ document.getElementsById('peckhack').addEventListener("submit", submitForm)
 
 function submitForm(e){
     e.preventDefault();
+    var fname= getElementVal('fname');
+    var lname= getElementVal('lname');
+    var msgContent= getElementVal('subject');
+
+    console.log(fname, lname, msgContent);
+}
+
+const getElementVal=(id)=>{
+    return document.getElementById(id).Value;
 }
