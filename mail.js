@@ -26,6 +26,14 @@ function submitForm(e) {
 
     //enable alert after submission
     document.querySelector('.alert').style.display = "block";
+
+    //remove alert
+    setTimeout(() => {
+        document.querySelector('.alert').style.display = "none";
+    }, 3000);
+
+    //reset form
+    document.getElementById("pechack").reset();
 }
 
 const saveMsg = (fname, lname, subject) => {
