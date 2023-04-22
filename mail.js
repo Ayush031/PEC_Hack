@@ -14,7 +14,7 @@ firebase.initializeApp(firebaseConfig);
 //reference for database
 var pechackDB = firebase.database().ref('pechack')
 
-document.getElementById("peckhack").addEventListener("submit", submitForm);
+document.getElementById("pechack").addEventListener("submit", submitForm);
 
 function submitForm(e){
     e.preventDefault();
@@ -22,7 +22,7 @@ function submitForm(e){
     var lastname= getElementVal("lname");
     var subject= getElementVal("subject");
 
-    console.log(fname, lname, msgContent);
+    console.log(fname, lname, subject);
 }
 
 const getElementVal=(id)=>{
