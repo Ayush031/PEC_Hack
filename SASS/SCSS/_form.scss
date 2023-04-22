@@ -1,5 +1,5 @@
 $color_1: white;
-$background-color_1: #04AA6D;
+$background-color_1: #04aa6d;
 $background-color_2: #f2f2f2;
 
 /* Style the label to display next to the inputs */
@@ -9,7 +9,7 @@ $background-color_2: #f2f2f2;
 /* Floating column for inputs: 75% width */
 /* Clear floats after the columns */
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-input[type=text] {
+input[type="text"] {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -37,7 +37,7 @@ label {
 	padding: 12px 12px 12px 0;
 	display: inline-block;
 }
-input[type=submit] {
+input[type="submit"] {
 	background-color: $background-color_1;
 	color: $color_1;
 	padding: 12px 20px;
@@ -77,10 +77,19 @@ input[type=submit] {
 		width: 100%;
 		margin-top: 0;
 	}
-	input[type=submit] {
+	input[type="submit"] {
 		width: 100%;
 		margin-top: 0;
 	}
 }
 
-
+.alert {
+	width: 100%;
+	background: rgb(0, 255, 106);
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 900;
+	display: none;
+}

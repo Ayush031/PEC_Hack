@@ -1,36 +1,3 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  height: 60px;
-  padding: 0 50px;
-}
-nav .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-nav .nav-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav .nav-links li {
-  margin: 0 20px;
-}
-nav .nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-}
-nav .nav-links li a:hover {
-  color: #f1c40f;
-}
-
 /* Style the label to display next to the inputs */
 /* Style the submit button */
 /* Style the container */
@@ -71,7 +38,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -118,6 +85,17 @@ input[type=submit] {
     margin-top: 0;
   }
 }
+.alert {
+  width: 100%;
+  background: rgb(0, 255, 106);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display: none;
+}
+
 .u-align-center {
   text-align: center;
 }
