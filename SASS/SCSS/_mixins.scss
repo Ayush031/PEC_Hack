@@ -1,0 +1,88 @@
+@mixin center-object {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+
+@mixin header-slider {
+    background-size: cover;
+    height: 100%;
+    flex-basis: 100%;
+    padding: 2rem 0 6rem 0;
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin section-center {
+    // position :absolute;
+    width: 73rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 4rem;
+}
+
+//breakpoints
+
+// Small	up to 640px	    20" to 65"	TVs	        320x569, 360x640, 480x854
+// Medium	641 - 1007px	7" to 12"	Tablets	    768x558, 960x540
+// Large	1008ps and up	13" and up	PC, Laptop	1024x640, 1366x768, 1440x930, 1920x1080
+
+// 1em=16px  
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint==phone-s {
+        @media only screen and (max-width:375px) {
+            @content;
+        }
+    }
+
+    //480px
+    @if $breakpoint==phone {
+        @media only screen and (max-width:30em) {
+            @content;
+        }
+    }
+
+    //640px
+    @if $breakpoint==phone-l {
+        @media only screen and (max-width:40em) {
+            @content;
+        }
+    }
+
+    //768px
+    @if $breakpoint==tablet-s {
+        @media only screen and (max-width:48em) {
+            @content;
+        }
+    }
+
+    // 960px
+    // @if $breakpoint==tablet-l {
+    //     @media only screen and (max-width:60em) {
+    //         @content;
+    //     }
+    // }
+
+    //1024px
+    @if $breakpoint==laptop {
+        @media only screen and (max-width:64em) {
+            @content;
+        }
+    }
+
+    //1200x675
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width:75em) {
+            @content;
+        }
+    }
+}

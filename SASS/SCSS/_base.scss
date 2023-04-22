@@ -8,29 +8,29 @@ html {
     font-size: 100%; // 1rem=16px , to calculate % - (16px/16px)*100 = 100%
     scroll-behavior: smooth;
 
-    @include respond(big-desktop) {
-        font-size: 100%; // 1rem=16px 16/16 *100 = 100%
-    }
+    // @include respond(big-desktop) {
+    //     font-size: 100%; // 1rem=16px 16/16 *100 = 100%
+    // }
 
-    @include respond(laptop) {
-        font-size: 75%; // 1rem=12px 12/16 *100 = 75%
-    }
+    // @include respond(laptop) {
+    //     font-size: 75%; // 1rem=12px 12/16 *100 = 75%
+    // }
 
-    @include respond(tablet-s) {
-        font-size: 56.25%; // 1rem=9px 9/16 *100 = 56.25%
-    }
+    // @include respond(tablet-s) {
+    //     font-size: 56.25%; // 1rem=9px 9/16 *100 = 56.25%
+    // }
 
-    @include respond(tablet-l) {
-        font-size: 50%; // 1rem=8px 8/16 *100 = 50%
-    }
+    // @include respond(tablet-l) {
+    //     font-size: 50%; // 1rem=8px 8/16 *100 = 50%
+    // }
 
-    @include respond(phone-l) {
-        font-size: 50%; // 1rem=8px 8/16 *100 = 50%
-    }
+    // @include respond(phone-l) {
+    //     font-size: 50%; // 1rem=8px 8/16 *100 = 50%
+    // }
 
-    @include respond(phone) {
-        font-size: 50%; // 1rem=8px 8/16 *100 = 50%
-    }
+    // @include respond(phone) {
+    //     font-size: 50%; // 1rem=8px 8/16 *100 = 50%
+    // }
 }
 
 body {
