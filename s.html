@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Company HomePage</title>
-  <link rel="stylesheet" >
+  <link rel="stylesheet">
   <style>
-
-
     body {
       margin: 0;
       box-sizing: border-box;
@@ -32,12 +30,12 @@
     }
 
     .nav-items {
-      
+
       position: absolute;
       align-items: center;
       left: 950px;
       top: 20px;
-      
+
       margin-right: 20px;
     }
 
@@ -49,7 +47,7 @@
 
     /* CSS for main element */
     .intro {
-        background-image: url("/bg.jpg");
+      background-image: url("/bg.jpg");
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -66,7 +64,7 @@
       font-family: sans-serif;
       font-size: 60px;
       color: #fff;
-      
+
       font-weight: bold;
       text-transform: uppercase;
       margin: 0;
@@ -79,18 +77,19 @@
       margin: 20px 0;
     }
 
-    .intro button {background-color: #0b79e0;
-    color: #fcfafa;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 10px;
-    font-size: 28px;
-    margin-top: -142px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
-    position: absolute;
-    left: 190px;
+    .intro button {
+      background-color: #0b79e0;
+      color: #fcfafa;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 28px;
+      margin-top: -142px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+      position: absolute;
+      left: 190px;
     }
 
     .achievements {
@@ -152,7 +151,7 @@
     }
 
     .about-me-text p {
-     width: 550px;
+      width: 550px;
       font-size: 15px;
       color: #585858;
       margin: 10px -2px;
@@ -162,12 +161,12 @@
     /* CSS for footer */
     .footer {
       display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #302f49;
-    padding: 40px 80px;
-    top: 400px;
-    position: relative;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+      top: 400px;
+      position: relative;
     }
 
     .footer .copy {
@@ -179,16 +178,25 @@
       justify-content: space-around;
       align-items: center;
       padding: 40px 0;
-      
+
     }
 
     .bottom-links .links {
       display: flex;
-      flex-direction: column;
+
       justify-content: center;
       align-items: center;
       padding: 0 40px;
+      flex-basis: 50%;
+
       
+    }
+    .insta,.fb,.wp{
+      flex-basis: auto;
+      height: 50px;
+      width: auto;
+      border-radius: 20px;
+      border: 1px solid red;
     }
 
     .bottom-links .links span {
@@ -203,171 +211,181 @@
       text-decoration: none;
       color: #a1a1a1;
       padding: 10px 20px;
-      
-    }
-    .logo{
-        position: absolute;
-        width: 183px;
-        height: 80px;
-        left: 26px;
-        top: 12px;
-    }
-    .logo1{
-        position: absolute;
-            width: 114px;
-            height: 35px;
-            left: 1070px;
-            top: 62px;
 
     }
-    .navv{
-        width: 105px;
-        background-color: #fff;
+
+    .logo {
+      position: absolute;
+      width: 183px;
+      height: 80px;
+      left: 26px;
+      top: 12px;
     }
-    body, html {
-    height: 100%;
-    margin: 0;
-    font: Arial, Helvetica, sans-serif;
-}
 
-* {
-    box-sizing: border-box;
-}
+    .logo1 {
+      position: absolute;
+      width: 114px;
+      height: 35px;
+      left: 1070px;
+      top: 62px;
 
-.bg-image{
-    /*background-image: url("https://images.unsplash.com/photo-1646649346217-7bec79d7ee0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=743&q=80");*/
-    filter: blur(8px);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    }
 
-}
+    .navv {
+      width: 105px;
+      background-color: #fff;
+    }
 
-.bg-text{
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 1307px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font: Arial, Helvetica, sans-serif;
+    }
 
-h1{
-    font: 1.5em;
-    text-align: center;
-    text-transform: capitalize;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-form{
-    margin: 0 auto;
-    width: 70%;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border: 1em;
-}
+    .bg-image {
+      /*background-image: url("https://images.unsplash.com/photo-1646649346217-7bec79d7ee0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=743&q=80");*/
+      filter: blur(8px);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
-fieldset{
-    border: 1px solid lightgray;
-    margin: 10px;
-}
+    }
 
-legend{
-    font-weight: 700;
-}
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 1307px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
 
-div + div{
-    margin-top: 1em;
-}
+    h1 {
+      font: 1.5em;
+      text-align: center;
+      text-transform: capitalize;
+    }
 
-input, textarea{
-    width: 200px;
-    border: 1px solid #999;
+    form {
+      margin: 0 auto;
+      width: 70%;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border: 1em;
+    }
 
-}
+    fieldset {
+      border: 1px solid lightgray;
+      margin: 10px;
+    }
 
-textarea{
-    vertical-align: top;
-    height: 12em;
-    resize: vertical;
-}
-button{
-  margin: 0.5em;
-    font-size: 1em;
-    text-transform: capitalize;
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px;
-    border-radius: 2px;
-    left: 209px;
-    position: relative;
-}
+    legend {
+      font-weight: 700;
+    }
 
-#submitbutton{
-    display: flex;
-    justify-items: auto;
-    
-}
-.logo{
-    position: absolute;
-width: 183px;
-height: 80px;
-left: 26px;
-top: 12px;
-}
-.tag1{
-    position: absolute;
-    width: 68px;
-    height: 12px;
-    left: 1371px;
-    top: 6px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    
-    color: #000000;
-}
-.tag2{
-    
-position: absolute;
-width: 122px;
-height: 18px;
-left: 1245px;
-top: 6px;
+    div+div {
+      margin-top: 1em;
+    }
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
+    input,
+    textarea {
+      width: 200px;
+      border: 1px solid #999;
 
-color: #000000;
-}
+    }
+
+    textarea {
+      vertical-align: top;
+      height: 12em;
+      resize: vertical;
+    }
+
+    button {
+      margin: 0.5em;
+      font-size: 1em;
+      text-transform: capitalize;
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px;
+      border-radius: 2px;
+      left: 209px;
+      position: relative;
+    }
+
+    #submitbutton {
+      display: flex;
+      justify-items: auto;
+
+    }
+
+    .logo {
+      position: absolute;
+      width: 183px;
+      height: 80px;
+      left: 26px;
+      top: 12px;
+    }
+
+    .tag1 {
+      position: absolute;
+      width: 68px;
+      height: 12px;
+      left: 1371px;
+      top: 6px;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+
+      color: #000000;
+    }
+
+    .tag2 {
+
+      position: absolute;
+      width: 122px;
+      height: 18px;
+      left: 1245px;
+      top: 6px;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+
+      color: #000000;
+    }
   </style>
 </head>
 
 <body>
-    <div class="navv">
- 
+  <div class="navv">
+
     <img class="logo" src="Government_of_India_logo (1)..png" alt="">
     <nav class="nav-items">
       <a href="#" style="font-size: 19px;"><b> Home</b></a>
       <a href="#" style="font-size: 19px;"><b> About</b></a>
       <a href="#" style="font-size: 19px;"><b> Contact</b></a>
     </nav>
- 
-</div>
+
+  </div>
   <main>
     <div class="intro">
       <!-- <h1>FEEDBACK SURVEY FORM</h1> -->
@@ -377,85 +395,82 @@ color: #000000;
     <div class="about-me">
       <div class="about-me-text">
         <h2>About the website</h2>
-        <p>This is a website presents various public policies/Consultation being worked on by the 
-            government and allows citizens to share their feedback on them.Law makers will get reports 
-            of the feedback collected on the Consultation with detailed data analysis. These reports ensure 
-            that all of the citizens’ opinions on Consultation are taken into consideration by lawmakers. 
-            The website records responses/feedback from citizens and passes them to the relevant. 
-            authorities</p>
+        <p>This is a website presents various public policies/Consultation being worked on by the
+          government and allows citizens to share their feedback on them.Law makers will get reports
+          of the feedback collected on the Consultation with detailed data analysis. These reports ensure
+          that all of the citizens’ opinions on Consultation are taken into consideration by lawmakers.
+          The website records responses/feedback from citizens and passes them to the relevant. 
+          authorities</p>
       </div>
       <img src="pngtree-check-list-mark-icon-checklist-png-image_5451826.png" alt="me">
     </div>
   </main>
-  
-      
-      <div class="bg-text" required>
-        <form method="post" action="#">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <table>
-                    <tr>
-                        <td><label for="name" id="name-label">Name:</label></td>
-                        <td><input type="text" id="name" name="user_name" placeholder="Enter Your Name" required></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="email">Email: </label>
-                        </td>
-                        <td>
-                            <input type="email" id="email" name="user_name" placeholder="Enter your email" required>
-                        </td>
-                    </tr>
-            
-                    <tr>
-                        <td>
-                            <label for="polno">Phone Number:</label>
-                        </td>
-                        <td>
-                            <input type="text" id="polno" name="Phonenumber" placeholder="Enter your phone number" required>
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
 
-            <fieldset>
-                <div>
-                    <label for="policy">Feedback type: </label>
-                    <select id="policy">
-                        <option value="policy6">Select your policy</option>
-                        <option value="policy1">Health Care policy</option>
-                        <option value="policy2">Educational policy</option>
-                        <option value="policy3">Environmental policy</option>
-                        <option value="policy4">Economical policy</option>
-                        <option value="policy5">Immigration policy</option>
-                    </select>
-                </div>
-            </fieldset>
-            <div id="submitbutton">
-                <button type="submit" id="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-    <br><br>
-      <img src="" alt="">
-    </picture>
-    <footer class="footer">
-      <div class="copy">&copy; 2022 Developer</div>
-      <div class="bottom-links">
-    <div class="links">
-      <span>More Info</span>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
 
-    </div>
-    
+  <div class="bg-text" required>
+    <form method="post" action="#">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+          <tr>
+            <td><label for="name" id="name-label">Name:</label></td>
+            <td><input type="text" id="name" name="user_name" placeholder="Enter Your Name" required></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email: </label>
+            </td>
+            <td>
+              <input type="email" id="email" name="user_name" placeholder="Enter your email" required>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="polno">Phone Number:</label>
+            </td>
+            <td>
+              <input type="text" id="polno" name="Phonenumber" placeholder="Enter your phone number" required>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <label for="policy">Feedback type: </label>
+          <select id="policy">
+            <option value="policy6">Select your policy</option>
+            <option value="policy1">Health Care policy</option>
+            <option value="policy2">Educational policy</option>
+            <option value="policy3">Environmental policy</option>
+            <option value="policy4">Economical policy</option>
+            <option value="policy5">Immigration policy</option>
+          </select>
+        </div>
+      </fieldset>
+      <div id="submitbutton">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <br><br>
+  <img src="" alt="">
+  </picture>
+  <footer class="footer">
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
       <div class="links">
         <span>Social Links</span>
-        <a href="https://www.whatsapp.com/"><i class="wp "><img src="/images (1).jpg" alt=""></i></a>
-        <a href="https://www.instagram.com/accounts/login/"><i class="insta"><img src="fb logo'.png" alt=""></i></a>
-        <a href="https://www.facebook.com/login/"><i class="fb"><img src="insta logo.jpg" alt=""></i></a>
-      </div> 
+        <a href="https://www.whatsapp.com/"><i ><img class="wp" src="/images (1).jpg" alt=""></i></a>
+        <a href="https://www.instagram.com/accounts/login/"><i><img  class="insta" src="fb logo'.png" alt=""></i></a>
+        <a href="https://www.facebook.com/login/"><i ><img class="fb" src="insta logo.jpg" alt=""></i></a>
+      </div>
     </div>
   </footer>
 </body>
