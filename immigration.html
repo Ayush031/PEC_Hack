@@ -10,16 +10,19 @@
     </title>
 
     <style>
+        body {
+            background-image: url("photo.jpeg");
+            font-family: Verdana;
+            text-align: center;
+        }
         h1 {
             color: #fff;
         }
-
         body {
             background-color: #0b0d0c;
             font-family: Verdana;
             text-align: center;
         }
-
         form {
             background-color: #fff;
             max-width: 900px;
@@ -27,17 +30,14 @@
             padding: 30px 20px;
             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
         }
-
         .form-control {
             text-align: left;
             margin-bottom: 25px;
         }
-
         .form-control label {
             display: block;
             margin-bottom: 10px;
         }
-
         .form-control input,
         .form-control select,
         .form-control textarea {
@@ -48,13 +48,11 @@
             display: block;
             width: 95%;
         }
-
         .form-control input[type="radio"],
         .form-control input[type="checkbox"] {
             display: inline-block;
             width: auto;
         }
-
         button {
             background-color: #c40505;
             border: 1px solid #777;
@@ -66,237 +64,213 @@
             margin-top: 50px;
             margin-bottom: 20px;
         }
+        .tag1{
+    position: absolute;
+    width: 68px;
+    height: 12px;
+    left: 1371px;
+    top: 6px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    
+    color: #000000;
+}
+.tag2{
+    
+position: absolute;
+width: 122px;
+height: 18px;
+left: 1245px;
+top: 6px;
 
-        .tag1 {
-            position: absolute;
-            width: 68px;
-            height: 12px;
-            left: 1371px;
-            top: 6px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
 
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-
-            color: #000000;
-        }
-
-        .tag2 {
-
-            position: absolute;
-            width: 122px;
-            height: 18px;
-            left: 1245px;
-            top: 6px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-
-            color: #000000;
-        }
-
-        .logo1 {
-            position: absolute;
-            width: 183px;
-            height: 80px;
-            left: 26px;
-            top: 12px;
-        }
-
-        .logo2 {
-            position: absolute;
-            width: 114px;
-            height: 35px;
-            left: 1300px;
-            top: 62px;
-        }
-
-        .csurvey {
-            color: red;
-            position: fixed;
-            width: -180px;
-            height: 10px;
-            left: 1300px;
-            top: 28px;
-            font-size: 13px
-        }
-
-        h1 {
-            margin-top: 200px;
-        }
-
-        .enter {
+color: #000000;
+}
+        .logo1{
+    position: absolute;
+width: 183px;
+height: 80px;
+left: 26px;
+top: 12px;
+}
+.logo2{
+    position: absolute;
+    width: 114px;
+    height: 35px;
+    left: 1300px;
+    top: 62px;
+}
+.csurvey{
+    color: red;
+    position: absolute;
+    width: -180px;
+    height: 10px;
+    left: 1300px;
+    top: 28px;
+    font-size: 13px
+}
+h1{
+    margin-top: 120px;
+}
+.h23{
+    height: 105px;
+    background-color: white;
+}
+.enter {
             width: auto;
-            margin-left: 263px;
+            margin-left: 397px;
+        }
+.logo3{
+            left: 450px;
+    position: relative;
+    width: 45;
+    height: 84px;
+    top: 12px;
         }
     </style>
 </head>
 
-<body>
+<body style="margin: 0; padding:0;">
     <div class="h23"><img class="logo1" src="Government_of_India_logo.jpg" alt="">
         <img class="logo2" src="WhatsApp Image 2023-04-22 at 12.55.39.jpg" alt="">
+        <img class="logo3" src="/Ajadi.jpeg" alt="">
         <p class="csurvey">Survey Partner:</p>
-        <p class="tag2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">Skip to main
-                content</a></p>
-        <p class="tag1"><a href="www.google.com">Contact Us</a></p>
-    </div>
+        <p class="tag2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">Skip to main content</a></p>
+        <p class="tag1"><a href="www.google.com">Contact Us</a></p></div>
     <h1>Immigration Policies Feedback Form</h1>
     <form id="form">
         <ul>
-            <li>
+        <li><div class="form-control">
+            <label>
+                How well do you think the current immigration policy addresses the needs of immigrants?
+            </label>
+            <label for="recommed-15">
+                <input type="radio" id="recommed-15" name="recommed7" value="extremely">Extremely well</input>
+            </label>
+            <label for="recommed-16">
+                <input type="radio" id="recommed-16" name="recommed7" value="moderately">Moderately well</input>
+            </label>
+            <label for="recommed-17">
+                <input type="radio" id="recommed-17" name="recommed7" value="not">Not well at all</input>
+            </label>
+            </label>
+        </div></li>
+        <li><div class="form-control">
+            <label>
+                How likely are you to support proposed changes to the current immigration policy?
+            </label>
+            <label for="recommed-18">
+                <input type="radio" id="recommed-18" name="recommed8" value="extremely">Extremely likely</input>
+            </label>
+            <label for="recommed-19">
+                <input type="radio" id="recommed-19" name="recommed8" value="moderately">Moderately likely</input>
+            </label>
+            <label for="recommed-20">
+                <input type="radio" id="recommed-20" name="recommed8" value="not">Not likely</input>
+            </label>
+            </label>
+        </div></li>
+        <li><div class="form-control">
+            <label>
+                Do you agree that the current ctivecurriculum effely prepares students for college and career success?
+            </label>
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed1" value="rarely">Agree</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed1" value="sometimes">Disagree</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed1" value="often">Neutral</input>
+            </label>
+            </label>
+        </div></li>
+        <li><div class="form-control">
+            <label>
+                Do you think the proposed policy changes would positively or negatively affect the diversity of the immigrant population?
+            </label>
+            <label for="recommed-5">
+                <input type="radio" id="recommed-5" name="recommed2" value="rarely">Agree </input>
+            </label>
+            <label for="recommed-6">
+                <input type="radio" id="recommed-6" name="recommed2" value="sometimes">Disagree</input>
+            </label>
+            <label for="recommed-7">
+                <input type="radio" id="recommed-7" name="recommed2" value="often">Neutral</input>
+            </label>
+            </label>
+        </div></li>
+        <li><div class="form-control">
+            <label>
+                Do you think the proposed policy changes would positively or negatively affect the economy?
+            </label>
+            <label for="recommed-9">
+                <input type="radio" id="recommed-9" name="recommed3" value="yes">Yes</input>
+            </label>
+            <label for="recommed-10">
+                <input type="radio" id="recommed-10" name="recommed3" value="no">No</input>
+            </label>
+        </div></li>
+        <li><div class="form-control">
+            <label>
+                Do you think the proposed policy changes would lead to greater or less social cohesion in the country?
+            </label>
+            <label for="recommed-11">
+                <input type="radio" id="recommed-11" name="recommed4" value="yes">Yes</input>
+            </label>
+            <label for="recommed-12">
+                <input type="radio" id="recommed-12" name="recommed4" value="no">No</input>
+            </label>
+        </div></li>
+        <li><div class="form-control">
+            <label>
+                Do you believe that students from diverse backgrounds receive equal opportunities and support in their education?
+            </label>
+            <label for="recommed-13">
+                <input type="radio" id="recommed-13" name="recommed5" value="yes">Yes</input>
+            </label>
+            <label for="recommed-14">
+                <input type="radio" id="recommed-14" name="recommed5" value="no">No</input>
+            </label>
+        </div></li>
+        <li><div class="form-control">
+            <label>
                 <div class="form-control">
                     <label>
-                        How well do you think the current immigration policy addresses the needs of immigrants?
-                    </label>
-                    <label for="recommed-15">
-                        <input type="radio" id="recommed-15" name="recommed7" value="extremely">Extremely well</input>
-                    </label>
-                    <label for="recommed-16">
-                        <input type="radio" id="recommed-16" name="recommed7" value="moderately">Moderately well</input>
-                    </label>
-                    <label for="recommed-17">
-                        <input type="radio" id="recommed-17" name="recommed7" value="not">Not well at all</input>
-                    </label>
-                    </label>
-                </div>
-            </li>
-            <li>
-                <div class="form-control">
-                    <label>
-                        How likely are you to support proposed changes to the current immigration policy?
-                    </label>
-                    <label for="recommed-18">
-                        <input type="radio" id="recommed-18" name="recommed8" value="extremely">Extremely likely</input>
-                    </label>
-                    <label for="recommed-19">
-                        <input type="radio" id="recommed-19" name="recommed8" value="moderately">Moderately
-                        likely</input>
-                    </label>
-                    <label for="recommed-20">
-                        <input type="radio" id="recommed-20" name="recommed8" value="not">Not likely</input>
-                    </label>
-                    </label>
-                </div>
-            </li>
-            <li>
-                <div class="form-control">
-                    <label>
-                        Do you agree that the current ctivecurriculum effely prepares students for college and career
-                        success?
-                    </label>
-                    <label for="recommed-1">
-                        <input type="radio" id="recommed-1" name="recommed1" value="rarely">Agree</input>
-                    </label>
-                    <label for="recommed-2">
-                        <input type="radio" id="recommed-2" name="recommed1" value="sometimes">Disagree</input>
-                    </label>
-                    <label for="recommed-3">
-                        <input type="radio" id="recommed-3" name="recommed1" value="often">Neutral</input>
-                    </label>
-                    </label>
-                </div>
-            </li>
-            <li>
-                <div class="form-control">
-                    <label>
-                        Do you think the proposed policy changes would positively or negatively affect the diversity of
-                        the immigrant population?
-                    </label>
-                    <label for="recommed-5">
-                        <input type="radio" id="recommed-5" name="recommed2" value="rarely">Agree </input>
-                    </label>
-                    <label for="recommed-6">
-                        <input type="radio" id="recommed-6" name="recommed2" value="sometimes">Disagree</input>
-                    </label>
-                    <label for="recommed-7">
-                        <input type="radio" id="recommed-7" name="recommed2" value="often">Neutral</input>
-                    </label>
-                    </label>
-                </div>
-            </li>
-            <li>
-                <div class="form-control">
-                    <label>
-                        Do you think the proposed policy changes would positively or negatively affect the economy?
-                    </label>
-                    <label for="recommed-9">
-                        <input type="radio" id="recommed-9" name="recommed3" value="yes">Yes</input>
-                    </label>
-                    <label for="recommed-10">
-                        <input type="radio" id="recommed-10" name="recommed3" value="no">No</input>
-                    </label>
-                </div>
-            </li>
-            <li>
-                <div class="form-control">
-                    <label>
-                        Do you think the proposed policy changes would lead to greater or less social cohesion in the
-                        country?
-                    </label>
-                    <label for="recommed-11">
-                        <input type="radio" id="recommed-11" name="recommed4" value="yes">Yes</input>
-                    </label>
-                    <label for="recommed-12">
-                        <input type="radio" id="recommed-12" name="recommed4" value="no">No</input>
-                    </label>
-                </div>
-            </li>
-            <li>
-                <div class="form-control">
-                    <label>
-                        Do you believe that students from diverse backgrounds receive equal opportunities and support in
-                        their education?
+                        How do you think the proposed policy changes would affect the rights of refugees and asylum seekers?
                     </label>
                     <label for="recommed-13">
-                        <input type="radio" id="recommed-13" name="recommed5" value="yes">Yes</input>
+                        <input type="radio" id="recommed-13" name="recommed6" value="agree">Agree</input>
                     </label>
                     <label for="recommed-14">
-                        <input type="radio" id="recommed-14" name="recommed5" value="no">No</input>
+                        <input type="radio" id="recommed-14" name="recommed6" value="disagree">Disagree</input>
                     </label>
-                </div>
-            </li>
-            <li>
-                <div class="form-control">
-                    <label>
-                        <div class="form-control">
-                            <label>
-                                How do you think the proposed policy changes would affect the rights of refugees and
-                                asylum seekers?
-                            </label>
-                            <label for="recommed-13">
-                                <input type="radio" id="recommed-13" name="recommed6" value="agree">Agree</input>
-                            </label>
-                            <label for="recommed-14">
-                                <input type="radio" id="recommed-14" name="recommed6" value="disagree">Disagree</input>
-                            </label>
-                            <label for="recommed-30">
-                                <input type="radio" id="recommed-30" name="recommed6" value="neutral">Neutral</input>
-                            </label>
-                        </div>
-            </li>
-            <li>
-                <div class="form-control">
-                    <label for="comment">
-                        How has your child's experience in school been impacted by recent changes in education policies
-                        and funding?
+                    <label for="recommed-30">
+                        <input type="radio" id="recommed-30" name="recommed6" value="neutral">Neutral</input>
                     </label>
-                    <textarea name="comment" id="comment" placeholder="Enter your answer here"></textarea>
-            </li>
-            </div>
-            </li>
-            <div class="form-control">
-                <li><label for="comment1">
-                        What are some of the most pressing challenges facing students and families in your community,
-                        and how do you believe education policy can help address these issues?
-                    </label></li>
-                <textarea name="comment1" id="comment1" placeholder="Enter your answer here"></textarea>
-            </div>
-        </ul>
+                </div></li>
+        <li><div class="form-control" >
+            <label for="comment">
+                How has your child's experience in school been impacted by recent changes in education policies and funding?
+            </label>
+            <textarea name="comment" id="comment" placeholder="Enter your answer here"></textarea></li>
+        </div></li>
+        <div class="form-control" >
+            <li><label for="comment1">
+                What are some of the most pressing challenges facing students and families in your community, and how do you believe education policy can help address these issues?
+            </label></li>
+            <textarea name="comment1" id="comment1" placeholder="Enter your answer here"></textarea>
+        </div>
+    </ul>
         <button class="enter" type="submit" value="submit">
             Submit
         </button>
