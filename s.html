@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Company HomePage</title>
-  <link rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -189,9 +189,12 @@
       padding: 0 40px;
       flex-basis: 50%;
 
-      
+
     }
-    .insta,.fb,.wp{
+
+    .insta,
+    .fb,
+    .wp {
       flex-basis: auto;
       height: 50px;
       width: auto;
@@ -203,7 +206,7 @@
       font-size: 20px;
       color: #fff;
       text-transform: uppercase;
-      
+
       margin: 10px 0;
     }
 
@@ -380,7 +383,7 @@
 
     <img class="logo" src="Government_of_India_logo (1)..png" alt="">
     <nav class="nav-items">
-      <a href="#" style="font-size: 19px;"><b> Home</b></a>
+      <a href="./s.html" style="font-size: 19px;"><b> Home</b></a>
       <a href="#" style="font-size: 19px;"><b> About</b></a>
       <a href="#" style="font-size: 19px;"><b> Contact</b></a>
     </nav>
@@ -390,7 +393,7 @@
     <div class="intro">
       <!-- <h1>FEEDBACK SURVEY FORM</h1> -->
       <!-- <p>Your opinion matters</p><br> -->
-      <button>Register</button>
+      <button id="mybtn">Register</button>
     </div>
     <div class="about-me">
       <div class="about-me-text">
@@ -408,51 +411,53 @@
 
 
   <div class="bg-text" required>
-    <form method="post" action="#">
-      <fieldset>
-        <legend>Personal Information</legend>
-        <table>
-          <tr>
-            <td><label for="name" id="name-label">Name:</label></td>
-            <td><input type="text" id="name" name="user_name" placeholder="Enter Your Name" required></td>
-          </tr>
-          <tr>
-            <td>
-              <label for="email">Email: </label>
-            </td>
-            <td>
-              <input type="email" id="email" name="user_name" placeholder="Enter your email" required>
-            </td>
-          </tr>
+    <section id="mySection">
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <table>
+            <tr>
+              <td><label for="name" id="name-label">Name:</label></td>
+              <td><input type="text" id="name" name="user_name" placeholder="Enter Your Name" required></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Email: </label>
+              </td>
+              <td>
+                <input type="email" id="email" name="user_name" placeholder="Enter your email" required>
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <label for="polno">Phone Number:</label>
-            </td>
-            <td>
-              <input type="text" id="polno" name="Phonenumber" placeholder="Enter your phone number" required>
-            </td>
-          </tr>
-        </table>
-      </fieldset>
+            <tr>
+              <td>
+                <label for="polno">Phone Number:</label>
+              </td>
+              <td>
+                <input type="text" id="polno" name="Phonenumber" placeholder="Enter your phone number" required>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
 
-      <fieldset>
-        <div>
-          <label for="policy">Feedback type: </label>
-          <select id="policy">
-            <option value="policy6">Select your policy</option>
-            <option value="policy1">Health Care policy</option>
-            <option value="policy2">Educational policy</option>
-            <option value="policy3">Environmental policy</option>
-            <option value="policy4">Economical policy</option>
-            <option value="policy5">Immigration policy</option>
-          </select>
+        <fieldset>
+          <div>
+            <label for="policy">Feedback type: </label>
+            <select id="policy">
+              <option value="policy6">Select your policy</option>
+              <option value="policy1">Health Care policy</option>
+              <option value="policy2">Educational policy</option>
+              <option value="policy3">Environmental policy</option>
+              <option value="policy4">Economical policy</option>
+              <option value="policy5">Immigration policy</option>
+            </select>
+          </div>
+        </fieldset>
+        <div id="submitbutton">
+          <button type="submit" id="submit">Submit</button>
         </div>
-      </fieldset>
-      <div id="submitbutton">
-        <button type="submit" id="submit">Submit</button>
-      </div>
-    </form>
+      </form>
+    </section>
   </div>
   <br><br>
   <img src="" alt="">
@@ -467,12 +472,19 @@
       </div>
       <div class="links">
         <span>Social Links</span>
-        <a href="https://www.whatsapp.com/"><i ><img class="wp" src="/images (1).jpg" alt=""></i></a>
-        <a href="https://www.instagram.com/accounts/login/"><i><img  class="insta" src="fb logo'.png" alt=""></i></a>
-        <a href="https://www.facebook.com/login/"><i ><img class="fb" src="insta logo.jpg" alt=""></i></a>
+        <a href="https://www.whatsapp.com/"><i><img class="wp" src="/images (1).jpg" alt=""></i></a>
+        <a href="https://www.instagram.com/accounts/login/"><i><img class="insta" src="fb logo'.png" alt=""></i></a>
+        <a href="https://www.facebook.com/login/"><i><img class="fb" src="insta logo.jpg" alt=""></i></a>
       </div>
     </div>
   </footer>
 </body>
+<script>
+  var button = document.getElementById("mybtn");
+  var section = document.getElementById("mySection");
 
+  button.addEventListener("click", function() {
+    section.scrollIntoView({ behavior: "smooth" });
+  });
+</script>
 </html>
