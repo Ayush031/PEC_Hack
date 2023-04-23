@@ -412,7 +412,7 @@
 
   <div class="bg-text" required>
     <section id="mySection">
-      <form method="post" action="#">
+      <form method="post" action="#" id="myForm">
         <fieldset>
           <legend>Personal Information</legend>
           <table>
@@ -445,11 +445,11 @@
             <label for="policy">Feedback type: </label>
             <select id="policy">
               <option value="policy6">Select your policy</option>
-              <option value="policy1">Health Care policy</option>
-              <option value="policy2">Educational policy</option>
-              <option value="policy3">Environmental policy</option>
-              <option value="policy4">Economical policy</option>
-              <option value="policy5">Immigration policy</option>
+              <option value="healthcare.html">Health Care policy</option>
+              <option value="educational.html">Educational policy</option>
+              <option value="environmental.html">Environmental policy</option>
+              <option value="economical.html">Economical policy</option>
+              <option value="immigration.html">Immigration policy</option>
             </select>
           </div>
         </fieldset>
@@ -485,6 +485,21 @@
 
   button.addEventListener("click", function() {
     section.scrollIntoView({ behavior: "smooth" });
+  });
+
+  // document.getElementById("policy").onchange = function() {
+  //   var selectedOption = this.value;
+  //   if (selectedOption !== "") {
+  //     window.location.href = selectedOption;
+  //   }
+  // };
+
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    var selectedOption = document.getElementById("policy").value;
+    if (selectedOption !== "") {
+      window.location.href = selectedOption;
+    }
   });
 </script>
 </html>
